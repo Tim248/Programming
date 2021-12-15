@@ -31,5 +31,13 @@
   "dependencies": {
     "cwebp-bin": "^7.0.1",
     "mozjpeg": "^8.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Tim248/prog-work.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tim248/prog-work/issues"
+  },
+  "homepage": "https://github.com/Tim248/prog-work#readme"
 }
