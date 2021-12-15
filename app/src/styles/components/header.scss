@@ -11,14 +11,15 @@
     position: relative;
 
     &__burger {
-        position: relative;
+        position: fixed;
         width: 40px;
         height: 30px;
         transition: transform 900ms;
         display: none;
         top: 3rem;
-        left: 0rem;
+        right: 1rem;
         overflow: hidden;
+        text-align: left;
 
         @media (max-width: 768px) {
             display: block;
