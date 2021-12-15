@@ -1,0 +1,35 @@
+section.main__player
+    .main__player-items
+        .player__items-left
+            h2.player__items-title Видео о нашей работе
+            p.player__items-text Просто посмотрите, как мы работаем
+        .player__items-right
+            video.player__items-video(src='./video/player-video.mp4' poster='./images/poster.webp')
+            button.circle
+                a(href="#!").icon-play.player__items-play 
+                p.player__items-playdescr Смотреть видео
+            .player__panel
+                .panel__line
+                    .panel__line-pos
+                .panel__left
+                    button.panel__left-play
+                        a(href="#!").icon-play.left-play
+                    .panel__left-volume
+                        button.volume__mute
+                            a(href="#!").icon-volumeup.fad
+                        input.volume__slider(type='range' value='100')
+                    .panel__left-time
+                        p.video__time-current 0:00
+                        span |
+                        p.video__time-duration 2:00
+                .panel__right
+                    select.right__video-speed
+                        option(value='0.25') 0.25
+                        option(value='0.5') 0.5
+                        option(value='0.75') 0.75
+                        option(value='1' selected='') Обычная
+                        option(value='1.25') 1.25
+                        option(value='1.5') 1.5
+                        option(value='1.75') 1.75
+                    button.video__fullscreen
+                        a(href="#!").full__screen.icon-fullscrn

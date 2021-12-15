@@ -1,0 +1,182 @@
+.allService {
+    background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+    padding-top: 100px;
+    min-height: 490px;
+    height: 100%;
+    
+    @media (max-width: 810px) {
+        min-height: 570px;
+    }
+    // padding-bottom: 302px;
+
+    &__content {
+        @include container();
+        // @include row(0);
+        // justify-content: space-between;
+
+        // @include media(770px) {
+        //     display: flex;
+        //     justify-content: center;
+        // }
+
+        // @include media(420px) {
+        //     display: flex;
+        //     justify-content: center;
+        // }
+
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 70px;
+            
+            @media(max-width: 810px) {
+                flex-direction: column-reverse;
+                text-align: center;
+                row-gap: 30px;
+            }
+        }
+
+        &-title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 53px;
+            color: $white;
+            max-width: 540px;
+            width: 100%;
+
+            @media(max-width: 810px) {
+                font-size: 24px;
+            }
+
+            @include media(420px) {
+                font-size: 30px;
+                line-height: 37px;
+                text-align: center;
+            }
+
+            @include media(350px) {
+                font-size: 26px;
+                line-height: 35px;
+                text-align: center;
+            }
+        }
+
+        &-bottom {
+            display: flex;
+            background: $white;
+            padding-bottom: 90px
+        }
+        
+        &-items {
+            @include container();
+            display: flex;
+            column-gap: 30px;
+            border-bottom: 1px solid $borderGrey;
+            padding-bottom: 85px;
+            width: 100%;
+            
+            @media (max-width: 910px) {
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                row-gap: 50px;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        max-width: 350px;
+        width: 100%;
+        margin-top: -14rem;
+        
+        @media (max-width: 910px) {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+   @media (max-width: 910px) {
+    &__bottom:last-child {
+        margin-top: 0;
+    }
+   }
+   
+   @media (max-width: 768px) {
+       &__bottom:nth-of-type(2) {
+           margin-top: 0
+       }
+   }
+   
+}
+
+.bottom {
+
+    &-info {
+        @include container();
+        max-width: 350px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    &-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: $textBlack;
+    }
+
+    &-span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: $lightBlue;
+        margin-right: 5px;
+    }
+
+    &-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        color: $textGrey;
+    }
+
+    &-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: $lightBlue;
+        text-decoration-line: underline;
+    }
+    
+    &-img {
+        @include media(1155px) {
+            width: 310px;
+        }
+        @include media(1021px) {
+            width: 250px;
+        }
+        @include media(345px) {
+            width: 310px;
+        }
+        @include media(345px) {
+            width: 310px;
+        }
+        @include media(345px) {
+            width: 310px;
+        }
+        @include media(345px) {
+            width: 310px;
+        }
+    }
+}

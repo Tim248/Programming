@@ -1,0 +1,17 @@
+header.header  
+    nav.header__nav
+        .header__nav-menu
+            .header__burger
+                span.header__burger-line
+                span.header__burger-line
+                span.header__burger-line
+            .header__nav-contents
+                ul.header__nav-list                                                 
+                    -var nav = ['Главная', 'Наши проекты', 'Услуги','Новости', 'Контакты']
+                    each value in nav                                
+                        li.header__nav-li 
+                            a.header__nav-link(href="#!")= value        
+    .header__content
+        h1.header__content-pretitle Передовая IT студия    
+        p.header__content-title Мы создаем легкие решения сложных задач и проблем
+        a(href="#!").header__content-btn.allbtn Наши проекты
